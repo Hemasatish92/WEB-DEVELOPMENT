@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+  <style>
+      fieldset {
+        background-color:gray; }
+      legend {
+        background-color: pink;
+        color: black;
+        padding: 5px 50px;
+        text-align:center; }
+      input {
+        margin: 5px; }
+      label {
+        display: inline-block;
+        width: 100px;
+        margin-left:60px; }
+      input {
+       padding: 5px 10px; }
+      .second{
+        margin-left:400px; }
+      .first{
+        text-align:center; }
+      .third{
+        margin-left:220px; }
+      body{
+        color:white;
+        background-color:black; }
+</style>
+
+  </head>
+  <body>
+    <div class="first">
+      <h1>Contact form</h1>
+      <p>Please fill in your informationand we'll be sending your order in no time.</p><br>
+      </div>
+      <div class="second">
+      <fieldset style="height:660px;width:500px;"><legend>Personal Details</legend>
+      <form class="" action="mailto:hhemasatish@gmail.com" method="post" enctype="text/plain">
+      <p>
+        <label>Salutation<br>
+                <select name="salutation">
+                  <option>--None--</option>
+                  <option>Mr.</option>
+                  <option>Ms.</option>
+                  <option>Mrs.</option>
+                  <option>Dr.</option>
+                  <option>Prof.</option>
+                </select>
+          </label>
+      </p>
+      <p>
+              <label for="firstname">First Name:</label>
+              <input type="text" name="First Name"><br>
+              <label for="lastname">Last Name:</label>
+              <input type="text" name="Last Name">
+      </p>
+      <p>
+      <label for="DOB">DOB:</label>
+      <input type="date" name="" value="">
+      </p>
+      <p>
+      <label for="Email">Email:</label>
+      <input type="email" name="Email" value="">
+      </p>
+      <p>
+      <label for="">Gender:</label>
+      Male<input type="radio" name="gender" value="male">
+      <label>Female<input type="radio" name="gender" value="female" /></label>
+      </p>
+     <label for="">Review:</label>
+     <input type="checkbox" name="" value="">
+     <input type="checkbox" name="" value="">
+     <input type="checkbox" name="" value="">
+     <input type="checkbox" name="" value="">
+     <input type="checkbox" name="" value="">
+     <p>
+       <label for="Subject">Message Subject:</label>
+       <select name="Product">
+       <option value="">Fruits</option>
+       <option value="">Vegetables</option>
+       <option value="">Others</option>
+       </select>
+     </p>
+     <p>
+      <label for="Message">Message:</label>
+      <textarea name="name" rows="10" cols="30"></textarea>
+     </p>
+     <hr>
+     <div class="third">
+       <button type="button" name="button">Submit</button>
+     </div>
+    </form>
+  </fieldset>
+</body>
+</html>
